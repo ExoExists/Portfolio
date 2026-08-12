@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,99 +11,235 @@
 </head>
 
 <body>
+
 <nav>
-    <h2>Navigation</h2>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
+
+    <h2>Alvin</h2>
+
+    <button class="menu-button" id="menu-button">
+        ☰
+    </button>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+    </div>
 
 </nav>
-<section id="home">
-<div class="home-content">
-    <h1>Hi, I'm Alvin</h1>
-    <p>I'm a student interested in software engineering and game development.</p>
-</div>
-</section>
 
-<section id ="about">
+    <!-- HOME -->
+
+    <section id="home">
+
+        <div class="home-content">
+
+            <p class="home-intro">Hello, I'm</p>
+
+            <h1>Alvin</h1>
+
+            <p class="home-description">
+                A student interested in software engineering
+                and game development.
+            </p>
+
+            <a
+                href="https://github.com/ExoExists"
+                class="home-button"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+        </div>
+        <div class="home-visual">
+            <div class="visual-circle">
+                &lt;/&gt;
+
+            </div>
+        </div>
+    </section>
 
 
-    <div class="about-content">
-    <h2>About Me</h2>
-    <p>
-        I'm a student interested in software engineering and game development
-    </p>
-    <p>
-        I've worked on projects using Java, Python, C#, HTML, CSS, Javascript, Unity and GameMaker Studio 2.
-    </p>
+    <!-- ABOUT -->
 
-    </div>
+    <section id="about">
 
-</section>
+        <div class="about-content">
 
-<section id="projects">
-    <div class="projects-content">
+            <h2>About Me</h2>
 
-        <h2>Projects</h2>
+            <p>
+                I'm a student interested in software engineering
+                and game development.
+            </p>
 
-        <div class="project-grid">
+            <p>
+                I've worked on projects using Java, Python, C#,
+                HTML, CSS, JavaScript, Unity and GameMaker Studio 2.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="projects-content">
+
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <!-- CHESS -->
+
                 <div class="project-card">
-                <h3>Chess</h3>
-                <p>
-                    Chess built in java with piece movement, graphical interface and full game logic
-                </p>
-                <a href="https://github.com/ExoExists/Chess" target"_blank">View on Github</a>
+                    <h3>Chess</h3>
+
+                    <p>
+                        Chess built in Java with piece movement,
+                        graphical interface and full game logic.
+                    </p>
+
+                    <p class="project-tech">
+                        Java
+                    </p>
+
+                    <a
+                        href="https://github.com/ExoExists/Chess"
+                        target="_blank"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
+
+                <!-- SMALLER PROJECTS -->
+
+                <div class="project-card">
+
+    
+                    <h3>Smaller Projects</h3>
+
+                    <p>
+                        Smaller programming projects I've created
+                        while learning software development.
+                    </p>
+
+                    <p class="project-tech">
+                        Java · Python · HTML · CSS · JavaScript
+                    </p>
+
+                    <a
+                        href="https://github.com/ExoExists?tab=repositories"
+                        target="_blank"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
+
+                <!-- GAMES -->
+
+                <div class="project-card">
+
+
+                    <h3>Games</h3>
+
+                    <p>
+                        Games I've created using Java, JavaScript,
+                        GameMaker Studio 2, Unity and Scratch.
+                    </p>
+
+                    <p class="project-tech">
+                        Unity · C# · GameMaker Studio 2 · Scratch
+                    </p>
+
+                    <a
+                        href="https://exo-codes.itch.io/"
+                        target="_blank"
+                    >
+                        View on Itch.io
+                    </a>
+
+                </div>
+
             </div>
 
-
-    
-        <div class="project-card">
-            <h3>Smaller Projects</h3>
-            <p>
-                Smaller programming projects I've created while learning software development/
-            </p>
         </div>
 
-        <div class="project-card">
-            <h3>Games</h3>
-            <p>
-                Games I've created using Java, Javascript, GameMakerStudio 2, Unity and Scratch.
-            </p>
-        </div>
-    </div>
-</div>
-</section>
-    
+    </section>
+
+
+    <!-- SKILLS -->
+
 <section id="skills">
+
     <div class="skills-content">
-        
+
         <h2>Skills</h2>
 
         <div class="skills-grid">
-            
+
             <div class="skill-card">
                 <h3>Languages</h3>
-                <p>Java, Python, C#, JavaScript</p>
+
+                <div class="skill-list">
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>C#</span>
+                    <span>JavaScript</span>
+                </div>
             </div>
+
 
             <div class="skill-card">
                 <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript</p>
+
+                <div class="skill-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
             </div>
+
 
             <div class="skill-card">
                 <h3>Game Development</h3>
-                <p>Unity, GameMaker Studio 2, Scratch</p>
+
+                <div class="skill-list">
+                    <span>Unity</span>
+                    <span>GameMaker Studio 2</span>
+                    <span>Scratch</span>
+                </div>
             </div>
+
 
             <div class="skill-card">
                 <h3>Tools</h3>
-                <p>Git, GitHub, VS Code</p>
+
+                <div class="skill-list">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                </div>
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
