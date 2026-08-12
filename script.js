@@ -32,6 +32,31 @@ window.addEventListener("scroll", () => {
 });
 
 
+//art gallery
+const artGallery = document.getElementById("art-gallery");
+
+const leftButton = document.getElementById("art-left");
+const rightButton = document.getElementById("art-right");
+
+rightButton.addEventListener("click", () => {
+
+    artGallery.scrollBy({
+        left: 400,
+        behavior: "smooth"
+    });
+
+});
+
+leftButton.addEventListener("click", () => {
+
+    artGallery.scrollBy({
+        left: -400,
+        behavior: "smooth"
+    });
+
+});
+
+
 // Mobile menu
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.getElementById("nav-links");

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap');
 
-
-/* =========================
-   GENERAL
-========================= */
+/* General*/
 
 html {
     scroll-behavior: smooth;
@@ -16,23 +13,16 @@ body {
     background-color: rgb(34, 34, 34);
 }
 
-
-/* =========================
-   NAVIGATION
-========================= */
+/* Navigation */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 50px;
-
     position: sticky;
     top: 0;
-
     background-color: white;
-
     z-index: 1000;
 }
 
@@ -50,7 +40,6 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 15px;
-
     transition: color 0.2s ease;
 }
 
@@ -58,20 +47,19 @@ nav a:hover {
     color: gray;
 }
 
-
-/* =========================
-   SECTIONS
-========================= */
+/* Sections */
 
 section {
-    min-height: 100vh;
-    padding: 50px;
+    min-height: 70vh;
+    padding: 70px 50px;
+    border-bottom: 1px solid #444;
 }
 
+section h2 {
+    margin-top: 0;
+}
 
-/* =========================
-   HOME
-========================= */
+/* Home */
 
 #home {
     display: flex;
@@ -87,61 +75,51 @@ section {
 .home-intro {
     text-align: left;
     font-size: 20px;
-
     margin-bottom: 5px;
 }
 
-.home-visual{
-    display:flex;
+.home-visual {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width:40%;
+    width: 40%;
 }
 
-.visual-circle{
-    width:350px;
-    height:350px;
-    display:flex;
+.visual-circle {
+    width: 350px;
+    height: 350px;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     border-radius: 50%;
     background-color: rgb(80, 80, 80);
     border: 2px solid rgb(138, 138, 138);
-    color: whote;
+    color: white;
     font-size: 70px;
     box-shadow: 0 0 50px rgba(2, 2, 2, 0.3);
 }
+
 #home h1 {
     text-align: left;
-
     font-size: clamp(50px, 10vw, 90px);
-
     margin: 0 0 5px 0;
 }
 
 .home-description {
     text-align: left;
-
     font-size: 30px;
-
     line-height: 1.6;
 }
 
 .home-button {
     display: inline-block;
-
     margin-top: 20px;
-
     padding: 12px 20px;
-
     border: 1px solid black;
     border-radius: 5px;
-
     text-decoration: none;
-
     color: white;
     background-color: black;
-
     transition: 0.2s ease;
 }
 
@@ -150,14 +128,10 @@ section {
     color: black;
 }
 
-
-/* =========================
-   ABOUT
-========================= */
+/* About Me*/
 
 #about {
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -176,14 +150,12 @@ section {
     line-height: 1.6;
 }
 
-
 /* =========================
    PROJECTS
 ========================= */
 
 #projects {
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -195,54 +167,43 @@ section {
 
 #projects h2 {
     font-size: 40px;
-
     text-align: center;
-
     margin-bottom: 40px;
 }
 
 .project-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .project-card {
     padding: 25px;
-
     border: 1px solid #ddd;
     border-radius: 10px;
-
     background-color: white;
     color: black;
 
     display: flex;
     flex-direction: column;
 
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-card img{
-    width:100%;
+.project-card img {
+    width: 100%;
     height: 200px;
-    display:bloack;
+    display: block;
     object-fit: cover;
 }
-.project-card-content{
-    padding:25px;
+
+.project-card-content {
+    padding: 25px;
 }
-
-
 
 .project-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
@@ -255,28 +216,19 @@ section {
 
 .project-tech {
     font-size: 14px;
-
     font-weight: bold;
-
     margin-top: 15px;
 }
 
 .project-card a {
     text-align: center;
     margin-top: auto;
-
     display: inline-block;
-
     text-decoration: none;
-
     color: black;
-
     border: 1px solid black;
-
     padding: 10px 15px;
-
     border-radius: 5px;
-
     transition: 0.2s ease;
 }
 
@@ -285,158 +237,213 @@ section {
     color: white;
 }
 
-
 /* =========================
    SKILLS
 ========================= */
 
-.skill-card {
-    padding: 25px;
-
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: white;
-    color: black;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.skill-card h3 {
-    font-size: 24px;
-
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.skill-list {
+#skills {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.skill-list span {
-    padding: 8px 12px;
-
-    border-radius: 5px;
-
-    background-color: rgb(41, 13, 41);
-
-    color: white;
-
-    font-size: 14px;
+.skills-content {
+    width: 100%;
+    max-width: 800px;
 }
+
+#skills h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    animation: fillBar 1s ease;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+.java {
+    width: 80%;
+}
+
+.python {
+    width: 70%;
+}
+
+.csharp {
+    width: 30%;
+}
+
+.unity {
+    width: 30%;
+}
+
+.gamemaker {
+    width: 70%;
+}
+
 
 .nav-link.active {
     font-weight: bold;
     color: #555;
 }
 
-.menu-button{
+
+.menu-button {
     display: none;
     background: none;
-    border:none;
+    border: none;
     font-size: 28px;
-    cursor:pointer;
+    cursor: pointer;
 }
-/* =========================
-   MOBILE
-========================= */
+
+
+
+#art {
+    min-height: 70vh;
+    padding: 70px 50px;
+}
+
+.art-gallery-container {
+    position: relative;
+    width: 100%;
+}
+
+.art-gallery-container h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.art-gallery-container p {
+    font-size: 18px;
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.art-gallery {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 20px 50px;
+}
+
+.art-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.art-item {
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #444;
+    transition: transform 0.2s ease;
+}
+
+.art-item:hover {
+    transform: scale(1.02);
+}
+
+.art-item img {
+    display: block;
+    height: 500px;
+    width: auto;
+}
+
+.gallery-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: 1px solid #555;
+
+    background-color: rgba(30, 30, 30, 0.9);
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s ease;
+}
+
+.gallery-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.gallery-button.left {
+    left: 5px;
+}
+
+.gallery-button.right {
+    right: 5px;
+}
+
+/* Phone*/
 
 @media (max-width: 700px) {
 
     nav {
+        position: sticky;
         padding: 20px;
-
-        flex-direction: column;
-
-        gap: 15px;
+        flex-direction: row;
     }
 
-    .nav-links {
-        gap: 15px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    section {
-        padding: 30px 20px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    #home h1 {
-        font-size: 40px;
-    }
-
-    .home-description {
-        font-size: 20px;
-    }
-
-    #home{
-        flex-direction: column;
-        justify-content: center;
-        text-align:center;
-    }
-
-    .home-content{
-        width:100%;
-    }
-
-    .home-intro, #home h1, .home-description{
-        text-align: center;
-    }
-
-    .home-visual{
-        width:100%;
-    }
-
-    .visual-circle{
-        width:220px;
-        height:220px;
-        font-size: 45px;
-    }
     .menu-button {
         display: block;
     }
 
-    nav {
-        position: sticky;
-        padding: 20px;
-
-        flex-direction: row;
-    }
-
     .nav-links {
         display: none;
-
         position: absolute;
-
         top: 70px;
         left: 0;
-
         width: 100%;
 
         flex-direction: column;
-
         gap: 0;
 
         background-color: white;
@@ -448,7 +455,65 @@ section {
 
     .nav-links a {
         padding: 15px 20px;
-
         border-top: 1px solid #ddd;
+    }
+
+    section {
+        min-height: 70vh;
+        padding: 50px 20px;
+    }
+
+    #home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-intro,
+    #home h1,
+    .home-description {
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    .home-description {
+        font-size: 20px;
+    }
+
+    .home-visual {
+        width: 100%;
+    }
+
+    .visual-circle {
+        width: 220px;
+        height: 220px;
+        font-size: 45px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .art-gallery {
+        padding: 20px;
+    }
+
+    .art-item img {
+        height: 350px;
+    }
+
+    #art {
+        padding: 50px 20px;
     }
 }
